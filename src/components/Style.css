@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Rose', cursive; 
+  font-size: 1.5rem;
+}
+
+.styleContainer{
+    margin-top: 5%;
+}
+h1 {
+  margin: 0.1rem;
+  text-shadow: 2px 2px 3px red;
+}
+.img_div {
+  margin: 3%;
+  border-radius: 1rem;
+}
