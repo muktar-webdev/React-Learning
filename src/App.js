@@ -5,7 +5,9 @@ import DataLoad from "./components/UseEffect/DataLoad";
 function App() {
   return (
     <div className="App">
+      {/* --useState Hook-- */}
       <Counter />
+      {/* --useEffect Hook-- */}
       <DataLoad />
     </div>
   );
