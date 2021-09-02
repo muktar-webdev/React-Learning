@@ -1,20 +1,12 @@
-import React, { useState } from "react";
+import withCounter from "./Hoc/withCounter";
 
-const MouseHover = () => {
-
-  const [mouseup, setMouseup] = useState(0);
-  //--handle Click Counter --//
-  //   const handleClickCounter = (e) => setCount(count + 1);
+const HoverCounter = (props) => {
+  const { count ,incrementCount} = props;
   return (
     <div>
-      <h3
-        onMouseOver={() => setMouseup(mouseup + 1)}
-        style={{ cursor: "pointer" }}
-      >
-        Mouse Over {mouseup} Times
-      </h3>
+      <h1 onMouseOver={incrementCount}>Hover {count} Times</h1>
     </div>
   );
 };
 
-export default MouseHover;
+export default withCounter(HoverCounter);
