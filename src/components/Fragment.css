@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fragment-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.fragment-container div{
+    border:1px solid red;
+    height: 100%;
+}
+.div1{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.div2{
+    display:flex;
+}
