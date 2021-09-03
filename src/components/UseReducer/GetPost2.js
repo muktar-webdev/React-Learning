@@ -31,7 +31,7 @@ const GetPost2 = () => {
 
   //--Dataload --//
   useEffect(() => {
-    const url = `https://jsonplaceholder.typicode.com/post/1`;
+    const url = `https://jsonplaceholder.typicode.com/posts/1`;
     fetch(url)
       .then((response) => response.json())
       //--if data loaded --//
