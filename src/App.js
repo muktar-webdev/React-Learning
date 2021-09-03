@@ -12,8 +12,11 @@ import Button from "./components/UseCallback/Button"; */
 // import Form from "./components/UseRef/Form";
 
 //--useReducer hook --//
-import Counter from "./components/UseReducer/Counter";
-import ComplexCounter from "./components/UseReducer/ComplexCounter.js";
+// import Counter from "./components/UseReducer/Counter";
+// import ComplexCounter from "./components/UseReducer/ComplexCounter.js";
+import GetPost from "./components/UseReducer/GetPost";
+import GetPost2 from "./components/UseReducer/GetPost2";
+
 function App() {
   /*  const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
@@ -71,7 +74,10 @@ function App() {
 
       {/* --useReducer -- */}
       {/* <Counter /> */}
-      <ComplexCounter />
+      {/* <ComplexCounter /> */}
+
+      {/* <GetPost></GetPost> */}
+      <GetPost2></GetPost2>
     </div>
   );
 }
