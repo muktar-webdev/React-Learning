@@ -8,8 +8,11 @@ import Title from "./components/UseCallback/Title";
 import ShowCount from "./components/UseCallback/ShowCount";
 import Button from "./components/UseCallback/Button";
 
+//--useRef & forwardRef --//
+import Form from "./components/UseRef/Form";
+
 function App() {
-  const [count1, setCount1] = useState(0);
+ /*  const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
 
   //--handler --//
@@ -19,7 +22,7 @@ function App() {
 
   const incrementByFive = useCallback((e) => {
     setCount2((preCount) => preCount + 5);
-  }, []);
+  }, []); */
 
   // //--Without useMemo --//
   // const isEvenOrOdd = (e) => {
@@ -29,27 +32,30 @@ function App() {
   // };
 
   //--with useMemo--//
-  const isEvenOrOdd = useMemo(
+ /*  const isEvenOrOdd = useMemo(
     (e) => {
       let i = 0;
       while (i < 1000000000) i += 1; //---Costly Operation --//
       return count1 % 2 === 0;
     },
     [count1]
-  );
+  ); */
 
   return (
     <div className="App">
+
+      
       {/* --useState Hook-- */}
       {/* <Counter /> */}
       {/* --useEffect Hook-- */}
       {/* <DataLoad /> */}
 
+      {/*  //--useCallback & useMemo & React.memo() --
       <Title />
       <ShowCount count={count1} title="Counter 1" />
       <br />
       {/* //--withoutMemo --//
-      <span>{isEvenOrOdd() ? "Even" : "Odd"}</span> */}
+      <span>{isEvenOrOdd() ? "Even" : "Odd"}</span> --}
       <span>{isEvenOrOdd ? "Even" : "Odd"}</span>
       <Button handleClick={incrementByOne}>Increment By One</Button>
       <br />
@@ -57,7 +63,11 @@ function App() {
       <br />
       <ShowCount count={count2} title="Counter 2" />
       <br />
-      <Button handleClick={incrementByFive}>Increment By Fice</Button>
+      <Button handleClick={incrementByFive}>Increment By Fice</Button> */}
+
+    {/* --useRef hook -- */}
+    <Form></Form>
+      
     </div>
   );
 }
