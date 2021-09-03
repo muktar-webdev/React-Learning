@@ -3,7 +3,7 @@ import "./App.css";
 import Counter from "./components/USESTATE/Counter";
 import DataLoad from "./components/UseEffect/DataLoad";
 
-//--Others component for UseMemo & UseCallback --//
+//--UseCallback & React.memo()--//
 import Title from "./components/UseCallback/Title";
 import ShowCount from "./components/UseCallback/ShowCount";
 import Button from "./components/UseCallback/Button";
