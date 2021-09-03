@@ -13,6 +13,7 @@ import Button from "./components/UseCallback/Button"; */
 
 //--useReducer hook --//
 import Counter from "./components/UseReducer/Counter";
+import ComplexCounter from "./components/UseReducer/ComplexCounter.js";
 function App() {
   /*  const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
@@ -69,7 +70,8 @@ function App() {
     <Form></Form> */}
 
       {/* --useReducer -- */}
-      <Counter />
+      {/* <Counter /> */}
+      <ComplexCounter />
     </div>
   );
 }
