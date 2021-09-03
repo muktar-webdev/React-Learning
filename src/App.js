@@ -33,7 +33,7 @@ function App() {
     (e) => {
       let i = 0;
       while (i < 1000000000) i += 1; //---Costly Operation --//
-      return count1 % i === 0;
+      return count1 % 2 === 0;
     },
     [count1]
   );
