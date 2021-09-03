@@ -1,18 +1,20 @@
 import React, { useState, useCallback, useMemo } from "react";
 import "./App.css";
-import Counter from "./components/USESTATE/Counter";
-import DataLoad from "./components/UseEffect/DataLoad";
+/* import Counter from "./components/USESTATE/Counter";
+import DataLoad from "./components/UseEffect/DataLoad"; */
 
 //--UseCallback & React.memo()--//
-import Title from "./components/UseCallback/Title";
+/* import Title from "./components/UseCallback/Title";
 import ShowCount from "./components/UseCallback/ShowCount";
-import Button from "./components/UseCallback/Button";
+import Button from "./components/UseCallback/Button"; */
 
 //--useRef & forwardRef --//
-import Form from "./components/UseRef/Form";
+// import Form from "./components/UseRef/Form";
 
+//--useReducer hook --//
+import Counter from "./components/UseReducer/Counter";
 function App() {
- /*  const [count1, setCount1] = useState(0);
+  /*  const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
 
   //--handler --//
@@ -32,7 +34,7 @@ function App() {
   // };
 
   //--with useMemo--//
- /*  const isEvenOrOdd = useMemo(
+  /*  const isEvenOrOdd = useMemo(
     (e) => {
       let i = 0;
       while (i < 1000000000) i += 1; //---Costly Operation --//
@@ -43,8 +45,6 @@ function App() {
 
   return (
     <div className="App">
-
-      
       {/* --useState Hook-- */}
       {/* <Counter /> */}
       {/* --useEffect Hook-- */}
@@ -65,9 +65,11 @@ function App() {
       <br />
       <Button handleClick={incrementByFive}>Increment By Fice</Button> */}
 
-    {/* --useRef hook -- */}
-    <Form></Form>
-      
+      {/* {/* --useRef hook -- }
+    <Form></Form> */}
+
+      {/* --useReducer -- */}
+      <Counter />
     </div>
   );
 }
