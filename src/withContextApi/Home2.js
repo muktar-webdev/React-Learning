@@ -4,7 +4,7 @@ import { ContextApi } from "../App";
 
 const Home2 = () => {
   //--useContext -//
-  const count = useContext(ContextApi);
+  const [count] = useContext(ContextApi);
 
   const style = {
     border: "1px solid red",

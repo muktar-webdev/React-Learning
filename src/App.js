@@ -15,17 +15,17 @@ function App() {
   const [count, setCount] = useState(0);
 
   //--hanldeClick --//
-  const increment = (e) => setCount(count + 1);
-  const decrement = (e) => setCount(count - 1);
+  // const increment = (e) => setCount(count + 1);
+  // const decrement = (e) => setCount(count - 1);
 
   return (
-    <ContextApi.Provider value={count}>
+    <ContextApi.Provider value={[count, setCount]}>
       {/* --Without Conext Api -- */}
       {/* <Header count={count} increment={increment} decrement={decrement}/>
       <Home2 count={count} /> */}
 
       {/* --With Conext Api -- */}
-      <Header increment={increment} decrement={decrement}/>
+      <Header />
       <Home2 />
     </ContextApi.Provider>
   );

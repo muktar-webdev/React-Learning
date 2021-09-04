@@ -3,9 +3,8 @@ import { ContextApi } from "../App";
 
 const Header = (props) => {
   //--useContextApi --//
-  const header = useContext(ContextApi);
-  //--destructuring props --//
-  const { increment, decrement } = props;
+  const [count, setCount] = useContext(ContextApi);
+
   const style = {
     border: "1px solid red",
     width: "100%",
@@ -16,11 +15,11 @@ const Header = (props) => {
     <div style={style}>
       <h1>Header Component </h1>
       {/* <p>Counter : {headerContext}</p> */}
-      <p>Counter : {header}</p>
-      <button type="button" onClick={increment}>
+      <p>Counter : {count}</p>
+      <button type="button" onClick={() => setCount(count + 1)}>
         Increment
       </button>
-      <button type="button" onClick={decrement}>
+      <button type="button" onClick={() => setCount(count - 1)}>
         Decrement
       </button>
     </div>
